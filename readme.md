@@ -14,9 +14,9 @@ This is a small pubsub system which is made in express and typescript
 to install simply run the below command while standing on the project root
 
 ```
-    npm run install
+npm run install
 ```
-this command do the noraml steps of npm install and getting up the mongo db container 
+this command do the normal steps of npm install and getting up the mongo db container 
 that is required by the system to work properly.
 
 ### Running the server
@@ -24,7 +24,7 @@ that is required by the system to work properly.
 Then to run the server run this command
 
 ```
-    npm run build:run
+npm run build:run
 ```
 
 This command first builds the typescript files then normally run the node server 
@@ -37,10 +37,10 @@ and check the db to be sure that everything is working as expected.
 
 to run the test request run this command 
 ```
-    npm run test:request
+npm run test:request
 ```
 
-This command do two things :
+#### This command do two things
 
 first it makes a request to the server for subscription
 request details below
