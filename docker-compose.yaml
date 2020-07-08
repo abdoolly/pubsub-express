@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+    mongo:
+      image: mongo:4.2.1-bionic
+      environment:
+        MONGO_INITDB_ROOT_USERNAME: publisher-db
+        MONGO_INITDB_ROOT_PASSWORD: publisher-db-secret-password
+      ports:
+        - 27017:27017
+      volumes:
+        - publisher-vol:/data/db
+
+volumes:
+  publisher-vol: ~

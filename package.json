@@ -1,0 +1,36 @@
+{
+  "name": "pub-sub",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./build/bin/www",
+    "watch": "tsc --watch",
+    "prod": "node ./build/bin/www",
+    "build": "tsc",
+    "build:run": "npm run build && npm run prod",
+    "run:db": "docker-compose up -d",
+    "install": "chmod +x scripts/install.sh && ./scripts/install.sh",
+    "test:request": "node scripts/run-testRequest.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "mongoose": "^5.9.22",
+    "morgan": "~1.9.1",
+    "ramda": "^0.27.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.7",
+    "@types/mongoose": "^5.7.30",
+    "@types/node": "^14.0.19",
+    "@types/ramda": "^0.27.10",
+    "@types/request-promise": "^4.1.46"
+  }
+}
